@@ -219,8 +219,11 @@ extension SBABridgeInfo {
         if let taskId = schedule.taskIdentifier {
             return taskReferenceWithIdentifier(taskId)
         }
+        else if let survey = schedule.activity.survey {
+            return survey
+        }
         else {
-            return schedule.activity.survey
+            return schedule.activity.compoundActivity
         }
     }
     

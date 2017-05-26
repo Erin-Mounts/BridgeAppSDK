@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6031633E1ED625F200EDC984 /* SBATaskReference+SBBCompoundActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6031633D1ED625F200EDC984 /* SBATaskReference+SBBCompoundActivity.swift */; };
+		603163501ED628E500EDC984 /* SBACompoundActivityTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6031634F1ED628E500EDC984 /* SBACompoundActivityTask.swift */; };
 		603242491E4001A100C184AD /* SBADataArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 603242471E4001A100C184AD /* SBADataArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6032424A1E4001A100C184AD /* SBADataArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 603242481E4001A100C184AD /* SBADataArchive.m */; };
 		6099B9871E00880500902297 /* SBAAppExtensionSharedInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099B9861E00880500902297 /* SBAAppExtensionSharedInfoController.swift */; };
@@ -415,6 +417,8 @@
 /* Begin PBXFileReference section */
 		161479C01BD6CE8F0099A068 /* BridgeAppSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BridgeAppSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		161479CF1BD6CE8F0099A068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6031633D1ED625F200EDC984 /* SBATaskReference+SBBCompoundActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SBATaskReference+SBBCompoundActivity.swift"; sourceTree = "<group>"; };
+		6031634F1ED628E500EDC984 /* SBACompoundActivityTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBACompoundActivityTask.swift; sourceTree = "<group>"; };
 		603242471E4001A100C184AD /* SBADataArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBADataArchive.h; sourceTree = "<group>"; };
 		603242481E4001A100C184AD /* SBADataArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBADataArchive.m; sourceTree = "<group>"; };
 		6099B9861E00880500902297 /* SBAAppExtensionSharedInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBAAppExtensionSharedInfoController.swift; sourceTree = "<group>"; };
@@ -726,9 +730,11 @@
 			isa = PBXGroup;
 			children = (
 				FF3E30371D5A7A2E00347165 /* SBABridgeTask+SBBSurveyReference.swift */,
+				6031633D1ED625F200EDC984 /* SBATaskReference+SBBCompoundActivity.swift */,
 				FB8439181C727BEB0086E961 /* SBASurveyFactory.swift */,
 				FF9634C61C9A0A6600D07595 /* SBASurveyItem+Bridge.swift */,
 				FF3E30541D5A806C00347165 /* SBASurveyTask.swift */,
+				6031634F1ED628E500EDC984 /* SBACompoundActivityTask.swift */,
 				FFF0124A1EA0199700D9D9DD /* SBATaskReference.swift */,
 				FFF0124C1EA01EFD00D9D9DD /* SBATaskReference+Dictionary.swift */,
 			);
@@ -1705,6 +1711,7 @@
 				FFAAF5FB1CC00CF100500929 /* SBAActivityTableViewController.swift in Sources */,
 				808514F71E81E33E00F1DCC5 /* SBAProfileDataSource.swift in Sources */,
 				FF9634C71C9A0A6600D07595 /* SBASurveyItem+Bridge.swift in Sources */,
+				603163501ED628E500EDC984 /* SBACompoundActivityTask.swift in Sources */,
 				FF9708041DA7104F006E8252 /* SBAConsentSubtaskStep.swift in Sources */,
 				FF722C141D775BB8004B2F8B /* SBANewsFeedParser.m in Sources */,
 				FF45F84C1CA5D61900EE0562 /* SBABridgeManager.m in Sources */,
@@ -1715,6 +1722,7 @@
 				FF21DE701DDBDA4A00C0B181 /* SBADemographicDataArchive.swift in Sources */,
 				80FDDC961E661BF70010DFA7 /* SBAProfileItem.swift in Sources */,
 				FF1F8D351CA9B9650098FAC5 /* SBAUserWrapper.swift in Sources */,
+				6031633E1ED625F200EDC984 /* SBATaskReference+SBBCompoundActivity.swift in Sources */,
 				6099B9A01E008B6400902297 /* SBAAppInfoDelegate.swift in Sources */,
 				FF9D4C3F1CA1FC28001C293C /* SBAAppDelegate.swift in Sources */,
 				6099B9871E00880500902297 /* SBAAppExtensionSharedInfoController.swift in Sources */,

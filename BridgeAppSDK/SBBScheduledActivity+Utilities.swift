@@ -88,13 +88,21 @@ public extension SBBScheduledActivity {
     }
     
     /**
-     Returns either the `SBBTaskReference` or `SBBSurveyReference` identifier.
-     The model currently supports an either/or case where the schedule includes a one-to-one
-     mapping to either a `SBBTaskReference` or `SBBSurveyReference`. This identifier maps to 
-     whichever of those is the appropriate identifier.
+     Returns the `SBBCompoundActivity` identifier.
+     */
+    public dynamic var compoundActivityIdentifier: String? {
+        guard self.activity.compoundActivity != nil else { return nil }
+        return self.activity.compoundActivity.taskIdentifier
+    }
+    
+    /**
+     Returns either the `SBBTaskReference`, `SBBSurveyReference`, or `SBBCompoundActivity` identifier.
+     The model currently supports an either/or/or case where the schedule includes a one-to-one
+     mapping to either a `SBBTaskReference`, a `SBBSurveyReference`, or a `SBBCompoundActivity`. This
+     identifier maps to whichever of those is the appropriate identifier.
      */
     public dynamic var activityIdentifier: String? {
-        return self.taskIdentifier ?? self.surveyIdentifier
+        return self.taskIdentifier ?? self.surveyIdentifier ?? self.compoundActivityIdentifier
     }
     
     public dynamic var scheduleIdentifier: String {
